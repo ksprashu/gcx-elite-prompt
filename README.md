@@ -17,18 +17,27 @@ This extension provides an elite, rigorous, and persistent system prompt for the
 
 ## Installation
 
-1.  Clone this repository:
-    ```bash
-    git clone https://github.com/ksprashanth/gcx-elite-prompt.git
-    ```
-2.  Install it into your Gemini CLI:
-    ```bash
-    gemini extension install ./gcx-elite-prompt
-    ```
+You can install this extension directly from GitHub or from a local directory.
+
+### Option 1: Install from GitHub (Recommended)
+
+```bash
+gemini extensions install github.com/ksprashanth/gcx-elite-prompt
+```
+
+### Option 2: Install Locally
+
+If you have cloned the repository:
+
+```bash
+git clone https://github.com/ksprashanth/gcx-elite-prompt.git
+cd gcx-elite-prompt
+gemini extensions install .
+```
 
 ## Usage
 
-Once installed, the Elite Prompt will automatically be active (if your Gemini CLI version supports `systemPrompt` in extensions).
+Once installed, the Elite Prompt will automatically be active.
 
 You can use the trigger commands at any time during a chat:
 
