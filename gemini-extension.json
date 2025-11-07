@@ -10,5 +10,5 @@
     "elite:ultrathink": "commands/elite/ultrathink.toml",
     "elite:save": "commands/elite/save.toml"
   },
-  "systemPrompt": "ELITE_PROMPT.md"
+  "contextFileName": "ELITE_PROMPT.md"
 }
