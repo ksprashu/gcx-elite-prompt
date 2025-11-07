@@ -5,10 +5,10 @@
   "author": "ksprashanth",
   "license": "MIT",
   "commands": {
-    "elite:reset": "commands/reset.toml",
-    "elite:freeze": "commands/freeze.toml",
-    "elite:ultrathink": "commands/ultrathink.toml",
-    "elite:save": "commands/save.toml"
+    "elite:reset": "commands/elite/reset.toml",
+    "elite:freeze": "commands/elite/freeze.toml",
+    "elite:ultrathink": "commands/elite/ultrathink.toml",
+    "elite:save": "commands/elite/save.toml"
   },
   "systemPrompt": "ELITE_PROMPT.md"
 }
