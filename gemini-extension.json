@@ -1,0 +1,14 @@
+{
+  "name": "gcx-elite-prompt",
+  "version": "1.0.0",
+  "description": "An elite, rigorous, and persistent system prompt for Gemini CLI, with mental trigger commands.",
+  "author": "ksprashanth",
+  "license": "MIT",
+  "commands": {
+    "elite": "commands/elite.toml",
+    "freeze": "commands/freeze.toml",
+    "ultrathink": "commands/ultrathink.toml",
+    "save": "commands/save.toml"
+  },
+  "systemPrompt": "ELITE_PROMPT.md"
+}
