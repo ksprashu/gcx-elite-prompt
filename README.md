@@ -46,3 +46,11 @@ You can use the trigger commands at any time during a chat:
 
 > User: This approach is getting messy. Let's rethink it.
 > User: /elite:ultrathink
+
+## Disclaimer
+
+This is not an officially supported Google product.
+
+## License
+
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
