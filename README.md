@@ -22,7 +22,7 @@ You can install this extension directly from GitHub or from a local directory.
 ### Option 1: Install from GitHub (Recommended)
 
 ```bash
-gemini extensions install github.com/ksprashanth/gcx-elite-prompt
+gemini extensions install github.com/ksprashu/gcx-elite-prompt
 ```
 
 ### Option 2: Install Locally
@@ -30,7 +30,7 @@ gemini extensions install github.com/ksprashanth/gcx-elite-prompt
 If you have cloned the repository:
 
 ```bash
-git clone https://github.com/ksprashanth/gcx-elite-prompt.git
+git clone https://github.com/ksprashu/gcx-elite-prompt.git
 cd gcx-elite-prompt
 gemini extensions install .
 ```
