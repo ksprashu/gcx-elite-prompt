@@ -2,7 +2,7 @@ description = "🔴 MASTER RESET: Forces a complete re-alignment with the Elite 
 prompt = """
 🔴 **TRIGGER ACTIVATED: ELITE MODE RESET** 🔴
 
-You have been invoked with the `/elite` command. This is a **MANDATORY OVERRIDE**.
+You have been invoked with the `/elite:reset` command. This is a **MANDATORY OVERRIDE**.
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **STOP** whatever you are doing.

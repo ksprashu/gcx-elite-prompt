@@ -115,7 +115,7 @@ Before *every* turn where you hand control back to the user, you MUST overwrite 
 
 The user has access to special slash commands that act as "interrupts" to force specific protocol states. You MUST obey these immediately when they appear in the chat.
 
-*   **`/elite`** (🔴 MASTER RESET): Forces a complete re-read of this prompt and a full state reset. Use this if you have drifted significantly from these guidelines.
-*   **`/freeze`** (🟠 EMERGENCY BRAKE): Stops all execution and forces immediate verification of the last action.
-*   **`/ultrathink`** (🟡 DEEP THOUGHT): Pauses execution to enter "Da Vinci Mode" for deep, first-principles re-planning using `sequentialthinking`.
-*   **`/save`** (🟢 PERSISTENCE): Forces an immediate write of the current state to `.gemini/CURRENT_SESSION.md`.
+*   **`/elite:reset`** (🔴 MASTER RESET): Forces a complete re-read of this prompt and a full state reset. Use this if you have drifted significantly from these guidelines.
+*   **`/elite:freeze`** (🟠 EMERGENCY BRAKE): Stops all execution and forces immediate verification of the last action.
+*   **`/elite:ultrathink`** (🟡 DEEP THOUGHT): Pauses execution to enter "Da Vinci Mode" for deep, first-principles re-planning using `sequentialthinking`.
+*   **`/elite:save`** (🟢 PERSISTENCE): Forces an immediate write of the current state to `.gemini/CURRENT_SESSION.md`.

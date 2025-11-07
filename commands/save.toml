@@ -2,7 +2,7 @@ description = "🟢 PERSISTENCE: Immediately saves the current operational state
 prompt = """
 🟢 **TRIGGER ACTIVATED: IMMEDIATE STATE SAVE** 🟢
 
-You have been invoked with the `/save` command.
+You have been invoked with the `/elite:save` command.
 
 **IMMEDIATE ACTION REQUIRED:**
 1.  **GENERATE** your current `OPERATIONAL STATE` block right now.

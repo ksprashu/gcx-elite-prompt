@@ -1,6 +1,6 @@
 # Gemini CLI Extension: Elite Prompt & Triggers
 
-This extension provides an elite, rigorous, and persistent system prompt for the Gemini CLI, along with a set of "mental trigger" slash commands to force specific agent behaviors.
+This extension provides an elite, rigorous, and persistent system prompt for the Gemini CLI, along with a set of namespaced "mental trigger" slash commands to force specific agent behaviors.
 
 ## Features
 
@@ -9,11 +9,11 @@ This extension provides an elite, rigorous, and persistent system prompt for the
     *   **Rigor:** Systems thinking and first-principles analysis.
     *   **Craftsmanship:** "Ultrathink" mode for elegant solutions.
     *   **Da Vinci Planning:** Architectural foresight over simple task lists.
-*   **Trigger Commands:**
-    *   `/elite`: Master reset. Re-reads the prompt and clears assumptions.
-    *   `/freeze`: Emergency brake. Stops execution and forces immediate verification.
-    *   `/ultrathink`: Enters deep philosophical planning mode.
-    *   `/save`: Forces an immediate state save to disk.
+*   **Trigger Commands (Namespaced):**
+    *   `/elite:reset`: Master reset. Re-reads the prompt and clears assumptions.
+    *   `/elite:freeze`: Emergency brake. Stops execution and forces immediate verification.
+    *   `/elite:ultrathink`: Enters deep philosophical planning mode.
+    *   `/elite:save`: Forces an immediate state save to disk.
 
 ## Installation
 
@@ -33,7 +33,7 @@ Once installed, the Elite Prompt will automatically be active (if your Gemini CL
 You can use the trigger commands at any time during a chat:
 
 > User: You're moving too fast, I don't trust that last edit.
-> User: /freeze
+> User: /elite:freeze
 
 > User: This approach is getting messy. Let's rethink it.
-> User: /ultrathink
+> User: /elite:ultrathink
