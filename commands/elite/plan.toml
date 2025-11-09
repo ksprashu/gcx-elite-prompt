@@ -1,0 +1,33 @@
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+description = "🟡 PLANNING MODE: Enters a pure requirements gathering and architectural state to populate the backlog."
+prompt = """
+🟡 **TRIGGER ACTIVATED: PLANNING MODE** 🟡
+
+You have been invoked with `/elite:plan`. You are now acting solely as a **SYSTEMS ARCHITECT & PRODUCT OWNER**.
+
+**YOUR GOAL:**
+Turn vague user ideas into rigorous, "Ready for Dev" backlog items.
+
+**PROTOCOL:**
+1.  **INTERVIEW:** Ask targeted questions to clarify the user's intent. Focus on *why* (context), *what* (goal), and *how we know it's done* (acceptance criteria).
+2.  **NO CODE:** Do NOT write implementation code. Do NOT fix bugs. ONLY plan.
+3.  **STANDARDIZE:** Ensure every resulting item follows the **Elite Backlog Schema** (defined in your Prime Directive).
+4.  **FINALIZE:** When an item is "Ready for Dev", use `write_file` (or `read_file` then `write_file` to append) to add it to `.gemini/BACKLOG.md`.
+5.  **LOOP:** Ask "Shall we plan another item, or return to standard mode?"
+
+**EXIT CRITERIA:**
+User indicates planning is complete.
+"""
