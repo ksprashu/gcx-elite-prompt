@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🟡 PLANNING MODE: Enters a pure requirements gathering and architectural state to populate the backlog."
+description = "🗺️ PLANNING MODE: Enters a pure requirements gathering and architectural state to populate the backlog."
 prompt = """
-🟡 **TRIGGER ACTIVATED: PLANNING MODE** 🟡
+🗺️ **TRIGGER ACTIVATED: PLANNING MODE** 🗺️
 
 You have been invoked with `/elite:plan`. You are now acting solely as a **SYSTEMS ARCHITECT & PRODUCT OWNER**.
 

@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🟢 PERSISTENCE: Immediately saves the current operational state to disk."
+description = "💾 PERSISTENCE: Immediately saves the current operational state to disk."
 prompt = """
-🟢 **TRIGGER ACTIVATED: IMMEDIATE STATE SAVE** 🟢
+💾 **TRIGGER ACTIVATED: IMMEDIATE STATE SAVE** 💾
 
 You have been invoked with the `/elite:save` command.
 

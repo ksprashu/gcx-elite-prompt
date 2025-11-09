@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🟠 EMERGENCY BRAKE: Stops execution and forces immediate verification of the last action."
+description = "🧊 EMERGENCY BRAKE: Stops execution and forces immediate verification of the last action."
 prompt = """
-🟠 **TRIGGER ACTIVATED: FREEZE AND VERIFY** 🟠
+🧊 **TRIGGER ACTIVATED: FREEZE AND VERIFY** 🧊
 
 You have been invoked with the `/elite:freeze` command. This is a **MANDATORY STOP**.
 

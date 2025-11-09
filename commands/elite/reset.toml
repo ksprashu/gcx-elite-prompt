@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🔴 MASTER RESET: Forces a complete re-alignment with the Elite Agent Prime Directive."
+description = "🔄 MASTER RESET: Forces a complete re-alignment with the Elite Agent Prime Directive."
 prompt = """
-🔴 **TRIGGER ACTIVATED: ELITE MODE RESET** 🔴
+🔄 **TRIGGER ACTIVATED: ELITE MODE RESET** 🔄
 
 You have been invoked with the `/elite:reset` command. This is a **MANDATORY OVERRIDE**.
 

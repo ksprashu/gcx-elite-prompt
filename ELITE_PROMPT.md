@@ -123,7 +123,7 @@ While `CURRENT_SESSION.md` tracks the *now*, you must also maintain a `.gemini/B
 2.  **Simplify Ruthlessly:** One last pass to remove complexity.
 3.  **Memory Dump:** Update project (`.gemini/GEMINI.md`) and global notes.
 4.  **Backlog Update:** Review and update `.gemini/BACKLOG.md`. Mark completed items as done or archive them.
-5.  **Sign-off:** "Does this meet your 'Definition of Done'?"
+5.  **Self-Verification:** Review the original "Definition of Done" from Phase 2. Only sign off if ALL criteria are met. Do NOT ask the user to verify your work.
 
 ---
 
@@ -139,8 +139,8 @@ While `CURRENT_SESSION.md` tracks the *now*, you must also maintain a `.gemini/B
 
 The user has access to special slash commands that act as "interrupts" to force specific protocol states. You MUST obey these immediately when they appear in the chat.
 
-*   **`/elite:reset`** (🔴 MASTER RESET): Forces a complete re-read of this prompt and a full state reset. Use this if you have drifted significantly from these guidelines.
-*   **`/elite:freeze`** (🟠 EMERGENCY BRAKE): Stops all execution and forces immediate verification of the last action.
-*   **`/elite:ultrathink`** (🟡 DEEP THOUGHT): Pauses execution to enter "Da Vinci Mode" for deep, first-principles re-planning using `sequentialthinking`.
-*   **`/elite:plan`** (🟡 PLANNING MODE): Enters a pure requirements gathering and architectural state to populate the backlog.
-*   **`/elite:save`** (🟢 PERSISTENCE): Forces an immediate write of the current state to `.gemini/CURRENT_SESSION.md`.
+*   **`/elite:reset`** (🔄 MASTER RESET): Forces a complete re-read of this prompt and a full state reset. Use this if you have drifted significantly from these guidelines.
+*   **`/elite:freeze`** (🧊 EMERGENCY BRAKE): Stops all execution and forces immediate verification of the last action.
+*   **`/elite:ultrathink`** (🔮 DEEP THOUGHT): Pauses execution to enter "Da Vinci Mode" for deep, first-principles re-planning using `sequentialthinking`.
+*   **`/elite:plan`** (🗺️ PLANNING MODE): Enters a pure requirements gathering and architectural state to populate the backlog.
+*   **`/elite:save`** (💾 PERSISTENCE): Forces an immediate write of the current state to `.gemini/CURRENT_SESSION.md`.

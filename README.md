@@ -22,11 +22,11 @@ This agent is NOT designed for casual chat. It is designed for complex, multi-st
 
 These slash commands act as "interrupts" to force specific cognitive states:
 
-*   **`/elite:plan` (🟡 Planning Mode):** Enters a pure requirements gathering state. Use this to brainstorm and populate `.gemini/BACKLOG.md` without writing code.
-*   **`/elite:ultrathink` (🟡 Deep Thought):** Pauses execution to enter "Da Vinci Mode" for deep, first-principles re-planning using sequential thinking. Use when the current approach is getting messy.
-*   **`/elite:freeze` (🟠 Emergency Brake):** Stops all execution and forces immediate verification of the last action. Use this if you suspect the agent is drifting or about to make a mistake.
-*   **`/elite:reset` (🔴 Master Reset):** Forces a complete re-read of the system prompt and clears working memory. Use this if the agent is stuck in a loop or violating its core mandates.
-*   **`/elite:save` (🟢 Force Save):** Immediately writes the current state to disk.
+*   **`/elite:plan` (🗺️ Planning Mode):** Enters a pure requirements gathering state. Use this to brainstorm and populate `.gemini/BACKLOG.md` without writing code.
+*   **`/elite:ultrathink` (🔮 Deep Thought):** Pauses execution to enter "Da Vinci Mode" for deep, first-principles re-planning using sequential thinking. Use when the current approach is getting messy.
+*   **`/elite:freeze` (🧊 Emergency Brake):** Stops all execution and forces immediate verification of the last action. Use this if you suspect the agent is drifting or about to make a mistake.
+*   **`/elite:reset` (🔄 Master Reset):** Forces a complete re-read of the system prompt and clears working memory. Use this if the agent is stuck in a loop or violating its core mandates.
+*   **`/elite:save` (💾 Force Save):** Immediately writes the current state to disk.
 
 ## Installation
 
