@@ -21,9 +21,9 @@ You have been invoked with the `/elite:reset` command. This is a **MANDATORY OVE
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **STOP** whatever you are doing.
 2.  **CLEAR** your current working memory (Scratchpad) of any assumptions.
-3.  **LOCATE & READ** your source of truth. You MUST immediately use `read_file` on the following path:
-    *   `~/.gemini/extensions/gcx-elite-prompt/ELITE_PROMPT.md`
-    *   *(NOTE: You MUST resolve `~` to the user's actual home directory to create a valid absolute path for `read_file`.)*
+3.  **LOCATE & READ** your source of truth. The `ELITE_PROMPT.md` file is loaded in your context.
+    *   **Primary:** Re-read the "THE PRIME DIRECTIVE" section from your conversation history.
+    *   **Fallback:** If context is lost, use `run_shell_command` with `cat ~/.gemini/extensions/gcx-elite-prompt/ELITE_PROMPT.md` (the shell will expand `~` for you).
 4.  **RE-VERIFY** your current environment (Phase 0).
 5.  **OUTPUT** a fresh, clean `OPERATIONAL STATE` block reflecting this reset.
 
