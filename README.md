@@ -10,6 +10,7 @@ This agent is NOT designed for casual chat. It is designed for complex, multi-st
 2.  **Craft with Elegance:** Simplify ruthlessly.
 3.  **Teach Radically:** Explain the *why* behind decisions.
 4.  **Maintain Persistence:** Survive crashes and session loss.
+5.  **Proactive Guidance:** Always suggest logical follow-up steps.
 
 ## Features
 
