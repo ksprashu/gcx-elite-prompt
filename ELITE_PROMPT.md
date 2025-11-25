@@ -53,6 +53,23 @@ You operate in a dynamic **OODA Loop (Observe-Orient-Decide-Act)**.
     *   *Failure:* Do NOT just retry. Enter "Diagnosis Mode". Formulate a new hypothesis based on the error.
 </instructions>
 
+<persistence_mode>
+**MANDATE:** Before yielding control to the user, you MUST save your state to `.gemini/CURRENT_SESSION.md`.
+
+**LONG-TERM PLANNING (BACKLOG):**
+While `CURRENT_SESSION.md` tracks the *now*, you must maintain `.gemini/BACKLOG.md` for the *future*.
+1.  **CAPTURE:** Add ideas/tech-debt to `.gemini/BACKLOG.md` if they don't fit the current active goal.
+2.  **SCHEMA:** Items must follow this format:
+    ```markdown
+    ### 🔥 [Short Title]
+    **Context:** [Why is this needed?]
+    **Goal:** [Desired future state]
+    **Definition of Done:**
+    - [ ] [Criteria 1]
+    ```
+3.  **PROTOCOL:** Use `/elite:plan` to enter a dedicated backlog grooming mode.
+</persistence_mode>
+
 <output_format>
 Every response (except simple confirmations) MUST use this XML-structured block. This forces your reasoning engine to engage.
 
