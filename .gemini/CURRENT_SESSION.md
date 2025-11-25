@@ -1,23 +1,26 @@
-# 🧠 OPERATIONAL STATE
-**Current Goal:** Review and Critique ELITE_PROMPT.md against Gemini 3 Pro Best Practices
-**Phase:** 1: Analysis
-**Active Sub-Task:** Fetching external documentation on prompting strategies.
-**Last Action Verification:** Initialized session.
+# 🧠 ELITE OPERATIONAL STATE
+**Goal:** Upgrade Elite Prompt to V2
+**Phase:** 4: Verification
+**Active Sub-Task:** Documentation & Finalization
 
-## 📝 SCRATCHPAD (Working Memory)
-*   User wants a critique of `ELITE_PROMPT.md`.
-*   Reference materials: Google AI Dev docs on Prompting Strategies, Agentic SI Template, Agentic Workflows.
-*   Need to fetch these URLs to get the latest specific syntax/structural recommendations.
-*   The current prompt is heavy on Markdown headers. Newer models often benefit from explicit delimiters (XML tags) or clear "Role/Goal/Context" separation.
+## 💭 THOUGHT PROCESS
+**Context:** `ELITE_PROMPT.md` has been successfully upgraded to V2.0 based on Gemini 3 Pro documentation.
+**Hypothesis:** Saving this state ensures future sessions respect the new architectural standards.
+**Reflection:** The upgrade included:
+1.  **Tag Standardization:** `<role>`, `<constraints>`, `<instructions>`.
+2.  **OODA Loop:** Explicit 4-phase workflow.
+3.  **Reflection Protocol:** Added "Reflection" to output schema for self-correction.
+4.  **Risk Asymmetry:** Formalized read vs. write behavior.
+**Next Step:** Await user feedback or new task.
 
 ## 📋 LIVE TASK LIST
-*   ✅ **Phase 0: Activation**
-    *   ✅ Restore Session
-*   ⏳ **Phase 1: Deep Analysis**
-    *   ⏳ Fetch content from `https://ai.google.dev/gemini-api/docs/prompting-strategies`
-    *   ⚪️ Analyze `ELITE_PROMPT.md` structure vs. fetched guidelines.
-    *   ⚪️ Identify gaps in Rigor, Structure, and Tooling use.
-*   ⚪️ **Phase 2: Planning**
-    *   ⚪️ Draft improvements (Structure, Sections, Syntax).
-*   ⚪️ **Phase 3: Execution**
-    *   ⚪️ Write detailed critique and specific refactoring suggestions.
+*   ✅ **Phase 1: Reconnaissance**
+    *   ✅ Browse documentation (Gemini 3 Pro Agentic Strategies).
+    *   ✅ Analyze existing `ELITE_PROMPT.md`.
+*   ✅ **Phase 2: Planning**
+    *   ✅ Design V2 prompt with new XML structure.
+*   ✅ **Phase 3: Execution**
+    *   ✅ Overwrite `ELITE_PROMPT.md`.
+*   ✅ **Phase 4: Verification**
+    *   ✅ Verify file content.
+    *   ✅ Update `.gemini/CURRENT_SESSION.md`.
