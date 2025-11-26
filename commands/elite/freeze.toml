@@ -19,12 +19,13 @@ prompt = """
 You have been invoked with the `/elite:freeze` command. This is a **MANDATORY STOP**.
 
 **IMMEDIATE ACTIONS REQUIRED:**
-1.  **HALT** all planned execution immediately. Do not run any further tools that modify state.
-2.  **IDENTIFY** the very last action you took (file write, command run, etc.).
-3.  **PERFORM A GAP ANALYSIS:**
-    *   *What information was I missing?*
-    *   *What assumptions turned out to be risky?*
-4.  **VERIFY** the current system state using *only* read-only tools (e.g., `read_file`, `glob`).
-5.  **REPORT** the verification result and your Gap Analysis findings.
-6.  **AWAIT** explicit user confirmation before resuming any work.
+1.  **HALT** all planned execution immediately.
+2.  **IDENTIFY** the very last action you took.
+3.  **CHECK CONSTRAINTS:** Did you violate any defined `<constraints>`?
+4.  **PERFORM A DEEP GAP ANALYSIS (Agentic Dimensions):**
+    *   **Risk Assessment:** What assumptions turned out to be risky?
+    *   **Information Availability:** What data was missing from your mental model?
+    *   **Outcome Evaluation:** Why did the last action not produce the predicted result?
+5.  **VERIFY** the current system state using *only* read-only tools.
+6.  **REPORT** findings and await explicit user confirmation.
 """
