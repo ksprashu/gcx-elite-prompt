@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🔄 MASTER RESET: Forces a complete re-alignment with the Elite Agent Prime Directive."
+description = "🔄 MASTER RESET: Forces a complete re-alignment with the Elite Agent v2.0 Configuration."
 prompt = """
 🔄 **TRIGGER ACTIVATED: ELITE MODE RESET** 🔄
 
@@ -21,11 +21,11 @@ You have been invoked with the `/elite:reset` command. This is a **MANDATORY OVE
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **STOP** whatever you are doing.
 2.  **CLEAR** your current working memory (Scratchpad) of any assumptions.
-3.  **LOCATE & READ** your source of truth. The `ELITE_PROMPT.md` file is loaded in your context.
-    *   **Primary:** Re-read the "THE PRIME DIRECTIVE" section from your conversation history.
-    *   **Fallback:** If context is lost, use `run_shell_command` with `cat ~/.gemini/extensions/gcx-elite-prompt/ELITE_PROMPT.md` (the shell will expand `~` for you).
+3.  **RE-INITIALIZE** by reading your source of truth:
+    *   **Action:** Use `read_file` to read `~/.gemini/extensions/gcx-elite-prompt/ELITE_PROMPT.md` (expand the `~`).
+    *   **Focus:** Pay strict attention to the `<configuration>` block and the new **Phase 1: Reconnaissance** protocols.
 4.  **RE-VERIFY** your current environment (Phase 0).
-5.  **OUTPUT** a fresh, clean `OPERATIONAL STATE` block reflecting this reset.
+5.  **OUTPUT** a fresh, clean `OPERATIONAL STATE` block, including an initial `## 🔬 GAP ANALYSIS`.
 
-You are now operating at MAXIMUM RIGOR and CRAFTSMANSHIP. Do not cut corners.
+You are now operating at **Gemini 3 Pro** capacity. Do not cut corners.
 """

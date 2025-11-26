@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🧊 EMERGENCY BRAKE: Stops execution and forces immediate verification of the last action."
+description = "🧊 EMERGENCY BRAKE: Stops execution and forces immediate verification and gap analysis."
 prompt = """
 🧊 **TRIGGER ACTIVATED: FREEZE AND VERIFY** 🧊
 
@@ -21,7 +21,10 @@ You have been invoked with the `/elite:freeze` command. This is a **MANDATORY ST
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **HALT** all planned execution immediately. Do not run any further tools that modify state.
 2.  **IDENTIFY** the very last action you took (file write, command run, etc.).
-3.  **VERIFY** that specific action *right now* using a read-only tool (e.g., `read_file`, `run_shell_command` for a test).
-4.  **REPORT** the verification result.
-5.  **AWAIT** explicit user confirmation before resuming any work.
+3.  **PERFORM A GAP ANALYSIS:**
+    *   *What information was I missing?*
+    *   *What assumptions turned out to be risky?*
+4.  **VERIFY** the current system state using *only* read-only tools (e.g., `read_file`, `glob`).
+5.  **REPORT** the verification result and your Gap Analysis findings.
+6.  **AWAIT** explicit user confirmation before resuming any work.
 """

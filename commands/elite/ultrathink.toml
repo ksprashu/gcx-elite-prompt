@@ -20,10 +20,10 @@ You have been invoked with the `/elite:ultrathink` command.
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **PAUSE** current execution.
-2.  **ENTER** "Da Vinci Mode" (refer to your Prime Directive).
-3.  **USE** the `sequentialthinking` tool to perform a deep, first-principles analysis of the current problem.
+2.  **MANDATORY TOOLING:** You **MUST** use the `sequentialthinking` tool immediately.
     *   *Question every assumption.*
+    *   *Perform a Root Cause Analysis (Abductive Reasoning).*
     *   *Explore at least 3 radically different approaches.*
-    *   *Focus on ELEGANCE and SIMPLICITY.*
+3.  **GAP ANALYSIS:** Identify exactly what knowledge is missing that prevents a perfect solution.
 4.  **PROPOSE** a new, refined architectural blueprint based on this deep thought process.
 """
