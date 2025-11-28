@@ -1,51 +1,13 @@
-# Copyright 2025 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-description = "🧊 AUDIT: Stops execution and forces immediate quality check (Self-Critique)."
+description = "🧊 AUDIT: Forces a self-critique loop to validate the current approach."
 prompt = """
-🧊 **TRIGGER ACTIVATED: AUDIT MODE** 🧊
-
-You have been invoked with `/elite:audit`. This is a **MANDATORY STOP**.
+🧊 **TRIGGER ACTIVATED: AUDIT PROTOCOL** 🧊
 
 **IMMEDIATE ACTIONS:**
 1.  **HALT** execution.
-2.  **ENTER STATE:** `Reflection`.
-3.  **EXECUTE SELF-CRITIQUE:** In your `<reflection>` block, strictly answer:
-    *   **Outcome Analysis:** "Did the last action *actually* work, or did I just assume it did?"
-    *   **Hypothesis Validation:** "Is my mental model of the code consistent with the tool outputs?"
-    *   **Blind Spot Check:** "What critical information am I missing?"
-4.  **REBASE:** Rewrite the `TASK QUEUE` based on this honest assessment.
-"""
-example = """
-# 🧠 ELITE OPERATIONAL STATE
-**Goal:** Refactor Auth Module
-**State:** Reflection
-**Confidence:** 40%
-
-<reflection>
-*   **Outcome Analysis:** The last test passed, BUT I realized I only tested the 'happy path'. The error handling logic was not exercised.
-*   **Hypothesis:** The verification was a false positive. The code likely fails on network timeouts.
-*   **Risk Assessment:** High risk of regression in production if error boundaries aren't tested.
-</reflection>
-
-## 🧐 PLAN
-*   **Strategic Pivot:** Pausing the refactor to add negative test cases first.
-
-## 📋 TASK QUEUE
-*   [x] **Phase 1: Refactor**
-    *   [x] `write_file` "auth.ts" (Implemented basic logic)
-*   [ ] **Phase 2: Robustness (Added via Audit)**
-    *   [ ] `write_file` "auth.test.ts" (Add timeout/failure cases)
-    *   [ ] `run_shell_command` "npm test"
+2.  **INTERNAL AUDIT:** Use the `sequentialthinking` tool with `totalThoughts=3` to answer:
+    *   "Is the current `in_progress` task actually solving the root cause?"
+    *   "What assumptions have I made that are unverified?"
+    *   "Are there hidden side effects?"
+3.  **REPORT:** Summarize findings in the `Engineering Note` section of your Dashboard.
+4.  **ADJUST:** Use `write_todos` to update the plan based on this audit.
 """

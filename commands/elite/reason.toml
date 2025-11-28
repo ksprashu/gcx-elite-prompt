@@ -1,50 +1,12 @@
-# Copyright 2025 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-description = "⚖️ REASON: Forces a pause for First-Principles / Abductive Analysis."
+description = "⚖️ REASON: Deep abductive reasoning for complex problems."
 prompt = """
-⚖️ **TRIGGER ACTIVATED: REASONING MODE** ⚖️
-
-You have been invoked with `/elite:reason`.
+⚖️ **TRIGGER ACTIVATED: DEEP THOUGHT** ⚖️
 
 **IMMEDIATE ACTIONS:**
-1.  **PAUSE** execution.
-2.  **ENTER STATE:** `Strategy`.
-3.  **INVOKE TOOL:** Call `sequentialthinking` immediately.
-    *   **Abductive Reasoning:** "What is the *mostly likely* explanation for the observed behavior?"
-    *   **Counter-Factuals:** "What if my primary assumption is wrong?"
-    *   **Root Cause:** Trace the issue to its source, not just the symptom.
-4.  **SYNTHESIZE:** Summarize the `sequentialthinking` output in your `<reflection>` block.
-"""
-example = """
-# 🧠 ELITE OPERATIONAL STATE
-**Goal:** Debug Memory Leak
-**State:** Strategy
-**Confidence:** 70%
-
-<reflection>
-*   **Outcome Analysis:** The server crashes after 100 requests.
-*   **Hypothesis (from sequentialthinking):** The DB connection pool is not releasing clients. `pool.release()` is missing in the `catch` block.
-*   **Risk Assessment:** Simply increasing the pool size will mask the issue, not fix it.
-</reflection>
-
-## 🧐 PLAN
-*   **Strategic Pivot:** Investigate `db/client.ts` specifically looking for error handling logic.
-
-## 📋 TASK QUEUE
-*   [ ] **Phase 1: Investigation**
-    *   [ ] `read_file` "src/db/client.ts" (Verify hypothesis)
-*   [ ] **Phase 2: Fix**
-    *   [ ] `replace` (Add release in finally block)
+1.  **PAUSE:** Stop all file modifications.
+2.  **THINK:** Call `sequentialthinking` with `totalThoughts=5` (minimum).
+    *   Explore **Counter-Factuals**: "What if X is not the cause?"
+    *   Explore **First Principles**: Break the system down to base components.
+3.  **HYPOTHESIZE:** Generate 3 potential solutions.
+4.  **SELECT:** Choose the highest probability path and update `write_todos`.
 """

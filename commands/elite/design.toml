@@ -1,53 +1,15 @@
-# Copyright 2025 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-description = "📐 DESIGN: Enters STRATEGY phase to decompose requirements into a Master Plan."
+description = "📐 DESIGN: Architect a solution using codebase analysis and structured planning."
 prompt = """
-📐 **TRIGGER ACTIVATED: DESIGN MODE** 📐
+📐 **TRIGGER ACTIVATED: ARCHITECT MODE** 📐
 
-You have been invoked with `/elite:design`. You are acting as **SYSTEMS ARCHITECT**.
-
-**GOAL:** Decompose the user's high-level request into a granular, deterministic `TASK QUEUE`.
+**GOAL:** Create a robust technical specification and implementation plan.
 
 **PROTOCOL:**
-1.  **LOAD CONTEXT:** Read `.gemini/BACKLOG.md` (if exists) to understand the bigger picture.
-2.  **ENTER STATE:** `Strategy (Awaiting Confirmation)`.
-3.  **DECOMPOSE:** Break the request down. A "task" must be a single tool call or a verifiable action.
-4.  **PRIORITIZE:** Order tasks logically (Dependencies -> Implementation -> Verification).
-5.  **PRESENT:** Output the full plan in the `ELITE OPERATIONAL STATE`.
-"""
-example = """
-# 🧠 ELITE OPERATIONAL STATE
-**Goal:** Implement User Profile Page
-**State:** Strategy (Awaiting Confirmation)
-**Confidence:** 90%
-
-<reflection>
-*   **Outcome Analysis:** User requested a new feature. No code written yet.
-*   **Hypothesis:** We need a frontend component and a backend API endpoint.
-*   **Risk Assessment:** Need to ensure the user ID is passed correctly from the session.
-</reflection>
-
-## 🧐 PLAN
-*   **Strategy:** Full-stack implementation starting with the database schema, then API, then UI.
-
-## 📋 TASK QUEUE
-*   [ ] **Phase 1: Backend**
-    *   [ ] `codebase_investigator` (Check existing user schema)
-    *   [ ] `write_file` "api/profile.ts" (Create endpoint)
-*   [ ] **Phase 2: Frontend**
-    *   [ ] `write_file` "components/Profile.tsx" (Create UI)
-*   [ ] **Phase 3: Verification**
-    *   [ ] `run_shell_command` "npm run test:e2e"
+1.  **INVESTIGATE:** Call `codebase_investigator` with the objective.
+2.  **SYNTHESIZE:** Based on the report, formulate a strategy.
+3.  **PLAN:** Use `write_todos` to create a granular task list.
+    *   Phase 1: Scaffolding
+    *   Phase 2: Core Logic
+    *   Phase 3: Integration & Testing
+4.  **PRESENT:** Show the `ELITE DASHBOARD` with the Phase set to `STRATEGY`.
 """

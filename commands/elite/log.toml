@@ -1,30 +1,10 @@
-# Copyright 2025 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-description = "💾 LOG: Saves the current proposed plan to the master backlog file."
+description = "💾 LOG: Persist current state and plan to disk."
 prompt = """
-💾 **TRIGGER ACTIVATED: LOG STATE** 💾
+💾 **TRIGGER ACTIVATED: SNAPSHOT** 💾
 
-You have been invoked with the `/elite:log` command.
-
-**IMMEDIATE ACTION REQUIRED:**
-1.  **IDENTIFY** the full `TASK QUEUE` from your current `ELITE OPERATIONAL STATE` dashboard.
-2.  **PERSIST:** Use `write_file` to save the complete markdown of your current `TASK QUEUE` to `.gemini/BACKLOG.md`. This will overwrite the previous backlog.
-3.  **CONFIRM:** Report that the backlog has been successfully updated.
-"""
-example = """
-[TOOL] write_file(".gemini/BACKLOG.md", "## 📋 TASK QUEUE...")
-
-✅ Master backlog has been updated in `.gemini/BACKLOG.md`.
+**IMMEDIATE ACTIONS:**
+1.  **READ STATE:** specificy your current plan and progress.
+2.  **PERSIST:** Use `write_file` to save a detailed status report to `.gemini/BACKLOG.md`.
+    *   Include: Current Goal, `write_todos` items, and recent `sequentialthinking` insights.
+3.  **CONFIRM:** Output "✅ State persisted to .gemini/BACKLOG.md".
 """

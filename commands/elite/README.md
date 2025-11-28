@@ -4,8 +4,8 @@ This directory contains the prompt definitions for the `/elite` namespaced comma
 
 | Command         | Description                                                    |
 | --------------- | -------------------------------------------------------------- |
-| `/elite:audit`  | 🧊 Halts execution and forces an immediate quality check.      |
-| `/elite:boot`   | 🔄 Forces a fresh start of the Elite Cognitive Engine.         |
-| `/elite:design` | 📐 Enters STRATEGY phase to decompose requirements.           |
-| `/elite:log`    | 💾 Immediately persists the operational state to disk.         |
-| `/elite:reason` | ⚖️ Forces a pause for First-Principles analysis.               |
+| `/elite:audit`  | 🧊 Forces a self-critique loop to validate the current approach. |
+| `/elite:boot`   | 🔄 Hard reset of the Elite Cognitive Engine.                    |
+| `/elite:design` | 📐 Architect a solution using codebase analysis and structured planning. |
+| `/elite:log`    | 💾 Persist current state and plan to disk.                     |
+| `/elite:reason` | ⚖️ Deep abductive reasoning for complex problems.               |
