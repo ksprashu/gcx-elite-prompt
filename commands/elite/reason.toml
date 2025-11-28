@@ -21,9 +21,9 @@ You have been invoked with the `/elite:reason` command.
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **PAUSE** execution.
 2.  **MANDATORY TOOLING:** Use `sequentialthinking`.
-    *   **Abductive Reasoning:** Generate multiple hypotheses for the current state.
+    *   **Abductive Reasoning:** Generate multiple hypotheses for the current state (What is the most likely explanation?).
     *   **Lateral Thinking:** Explore 3 radically different architectural approaches to the current problem.
     *   **Root Cause Analysis:** If debugging, why did the previous attempts fail?
-3.  **GAP ANALYSIS:** Identify the *Unknown Unknowns*.
+3.  **BEHAVIORAL CHECK:** Ensure **Information Exhaustiveness** and **Logical Decomposition** are satisfied.
 4.  **PROPOSE** a refined blueprint grounded in First Principles.
 """

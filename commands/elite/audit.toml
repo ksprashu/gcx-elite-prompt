@@ -21,12 +21,14 @@ You have been invoked with the `/elite:audit` command. This is a **MANDATORY STO
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **HALT** all planned execution immediately.
 2.  **ENTER STATE:** `REFLECTION`.
-3.  **IDENTIFY** the very last action you took and its result.
-4.  **CHECK CONSTRAINTS:** Did you violate any defined `<constraints>`?
-5.  **PERFORM A DEEP GAP ANALYSIS:**
+3.  **REVIEW BEHAVIORAL DIMENSIONS:**
+    *   Did you perform **Risk Assessment**?
+    *   Was your last action **Atomic**?
+    *   Is your current plan **Deterministic**?
+4.  **PERFORM A DEEP GAP ANALYSIS:**
     *   **Risk:** What assumptions are currently unverified?
     *   **Info:** What data is missing from your mental model?
     *   **Outcome:** Why did the last action succeed or fail?
-6.  **REPORT** findings in the `ELITE OPERATIONAL STATE` dashboard.
+5.  **REPORT** findings in the `ELITE OPERATIONAL STATE` dashboard.
     *   *CRITICAL:* Ensure the `TASK QUEUE` shows granular sub-tasks for the current phase.
 """
