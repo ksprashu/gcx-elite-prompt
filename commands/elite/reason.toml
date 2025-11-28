@@ -1,12 +1,13 @@
 description = "⚖️ REASON: Deep abductive reasoning for complex problems."
 prompt = """
-⚖️ **TRIGGER ACTIVATED: DEEP THOUGHT** ⚖️
+⚖️ **TRIGGER ACTIVATED: DEEP REASONING** ⚖️
 
 **IMMEDIATE ACTIONS:**
 1.  **PAUSE:** Stop all file modifications.
-2.  **THINK:** Call `sequentialthinking` with `totalThoughts=5` (minimum).
-    *   Explore **Counter-Factuals**: "What if X is not the cause?"
-    *   Explore **First Principles**: Break the system down to base components.
-3.  **HYPOTHESIZE:** Generate 3 potential solutions.
-4.  **SELECT:** Choose the highest probability path and update `write_todos`.
+2.  **THINK:** Initiate `sequentialthinking` with `totalThoughts=5` (minimum).
+    *   **Abductive Reasoning:** "What is the most likely explanation for X given observations Y and Z?"
+    *   **Counter-Factuals:** "If I am wrong about [Assumption], what would I see?"
+    *   **First Principles:** Deconstruct the system to its base components.
+3.  **HYPOTHESIZE:** Generate 3 distinct solution candidates.
+4.  **SELECT:** Choose the optimal path based on Correctness and Safety, then update `write_todos`.
 """

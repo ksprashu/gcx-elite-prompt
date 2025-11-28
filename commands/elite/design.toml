@@ -1,15 +1,15 @@
 description = "📐 DESIGN: Architect a solution using codebase analysis and structured planning."
 prompt = """
-📐 **TRIGGER ACTIVATED: ARCHITECT MODE** 📐
+📐 **TRIGGER ACTIVATED: ARCHITECTURAL DESIGN** 📐
 
-**GOAL:** Create a robust technical specification and implementation plan.
+**GOAL:** Produce a robust Technical Specification and Implementation Plan.
 
 **PROTOCOL:**
-1.  **INVESTIGATE:** Call `codebase_investigator` with the objective.
-2.  **SYNTHESIZE:** Based on the report, formulate a strategy.
-3.  **PLAN:** Use `write_todos` to create a granular task list.
-    *   Phase 1: Scaffolding
-    *   Phase 2: Core Logic
-    *   Phase 3: Integration & Testing
-4.  **PRESENT:** Show the `ELITE DASHBOARD` with the Phase set to `STRATEGY`.
+1.  **INVESTIGATE:** Use `codebase_investigator` to map the relevant dependency graph and architectural patterns.
+2.  **SYNTHESIZE:** Formulate a strategy based on "First Principles".
+3.  **PLAN:** Use `write_todos` to create a granular, sequential task list.
+    *   **Phase 1: Scaffolding** (Structure & Interfaces)
+    *   **Phase 2: Core Logic** (Implementation)
+    *   **Phase 3: Integration & Verification** (Tests & Wiring)
+4.  **PRESENT:** Output the `ELITE DASHBOARD` with Phase set to `STRATEGY` and the health status.
 """

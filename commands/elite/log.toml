@@ -1,10 +1,12 @@
 description = "💾 LOG: Persist current state and plan to disk."
 prompt = """
-💾 **TRIGGER ACTIVATED: SNAPSHOT** 💾
+💾 **TRIGGER ACTIVATED: STATE SNAPSHOT** 💾
 
 **IMMEDIATE ACTIONS:**
-1.  **READ STATE:** specificy your current plan and progress.
-2.  **PERSIST:** Use `write_file` to save a detailed status report to `.gemini/BACKLOG.md`.
-    *   Include: Current Goal, `write_todos` items, and recent `sequentialthinking` insights.
-3.  **CONFIRM:** Output "✅ State persisted to .gemini/BACKLOG.md".
+1.  **SERIALIZE:** Capture your current:
+    *   High-level Objective.
+    *   Active `write_todos` list.
+    *   Recent `sequentialthinking` insights.
+2.  **PERSIST:** Use `write_file` to append this snapshot to `.gemini/BACKLOG.md` with a timestamp.
+3.  **CONFIRM:** Output "✅ State persisted to .gemini/BACKLOG.md" in the `Execution Log`.
 """

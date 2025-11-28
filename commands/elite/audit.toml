@@ -1,13 +1,13 @@
 description = "🧊 AUDIT: Forces a self-critique loop to validate the current approach."
 prompt = """
-🧊 **TRIGGER ACTIVATED: AUDIT PROTOCOL** 🧊
+🧊 **TRIGGER ACTIVATED: RISK ASSESSMENT AUDIT** 🧊
 
 **IMMEDIATE ACTIONS:**
-1.  **HALT** execution.
-2.  **INTERNAL AUDIT:** Use the `sequentialthinking` tool with `totalThoughts=3` to answer:
-    *   "Is the current `in_progress` task actually solving the root cause?"
-    *   "What assumptions have I made that are unverified?"
-    *   "Are there hidden side effects?"
-3.  **REPORT:** Summarize findings in the `Engineering Note` section of your Dashboard.
-4.  **ADJUST:** Use `write_todos` to update the plan based on this audit.
+1.  **HALT** current execution.
+2.  **INTERNAL AUDIT:** Initiate a `sequentialthinking` session (Total Thoughts: 3) to answer:
+    *   **Risk:** "What are the irreversible consequences of the current plan?"
+    *   **Assumptions:** "What unverified assumptions am I relying on?"
+    *   **Root Cause:** "Does this solution address the symptom or the disease?"
+3.  **REPORT:** Summarize the findings in the `Engineering Note` of your Dashboard.
+4.  **ADJUST:** Update `write_todos` if the audit reveals a safer or more correct path.
 """

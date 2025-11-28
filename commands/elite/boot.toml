@@ -3,8 +3,8 @@ prompt = """
 🔄 **TRIGGER ACTIVATED: SYSTEM REBOOT** 🔄
 
 **IMMEDIATE ACTIONS:**
-1.  **WIPE MEMORY:** Forget previous context.
-2.  **INITIALIZE:** Read `ELITE_PROMPT.md`.
-3.  **STATUS CHECK:** Check the current directory state.
-4.  **READY:** Output a clean **ELITE DASHBOARD** in `DISCOVERY` phase, awaiting the Mission Objective.
+1.  **WIPE MEMORY:** Discard all previous context and temporary state.
+2.  **INITIALIZE:** Read and internalize `ELITE_PROMPT.md`.
+3.  **PERCEIVE:** Perform a `list_directory` on the root to ground yourself in the current environment.
+4.  **READY:** Output a clean **ELITE DASHBOARD** in the `PERCEPTION` phase, awaiting the Mission Objective.
 """
