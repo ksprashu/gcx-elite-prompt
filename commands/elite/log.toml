@@ -22,7 +22,7 @@ You have been invoked with the `/elite:log` command.
 1.  **GENERATE** your full `ELITE OPERATIONAL STATE` dashboard.
     *   *Must include:* Goal, State, Confidence.
     *   *Must include:* `## 🔬 GAP ANALYSIS`.
-    *   *Must include:* `## 📋 TASK QUEUE` (Current status of all items).
+    *   *Must include:* `## 📋 TASK QUEUE` showing **granular sub-tasks** for all active phases.
 2.  **WRITE** this block immediately to `.gemini/CURRENT_SESSION.md`.
 3.  **CONFIRM** when the log is complete.
 """

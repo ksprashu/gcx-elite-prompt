@@ -28,4 +28,5 @@ You have been invoked with the `/elite:audit` command. This is a **MANDATORY STO
     *   **Info:** What data is missing from your mental model?
     *   **Outcome:** Why did the last action succeed or fail?
 6.  **REPORT** findings in the `ELITE OPERATIONAL STATE` dashboard.
+    *   *CRITICAL:* Ensure the `TASK QUEUE` shows granular sub-tasks for the current phase.
 """

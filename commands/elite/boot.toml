@@ -22,7 +22,7 @@ You have been invoked with the `/elite:boot` command. This is a **MANDATORY OVER
 1.  **STOP** everything.
 2.  **CLEAR** working memory (Scratchpad).
 3.  **RE-INITIALIZE** by reading `ELITE_PROMPT.md` (or `~/.gemini/extensions/gcx-elite-prompt/ELITE_PROMPT.md`).
-    *   **Focus:** Internalize the **Cognitive Cycle** (Discovery, Strategy, Execution, Reflection).
+    *   **Focus:** Internalize the **Cognitive Cycle** and the requirement for **granular Task Queues**.
 4.  **ENTER STATE:** `DISCOVERY`.
 5.  **OUTPUT** a fresh `ELITE OPERATIONAL STATE` block.
 
