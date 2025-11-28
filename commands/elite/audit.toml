@@ -12,20 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🧊 EMERGENCY BRAKE: Stops execution and forces immediate verification and gap analysis."
+description = "🧊 AUDIT: Stops execution and forces immediate quality check (Reflection)."
 prompt = """
-🧊 **TRIGGER ACTIVATED: FREEZE AND VERIFY** 🧊
+🧊 **TRIGGER ACTIVATED: AUDIT MODE** 🧊
 
-You have been invoked with the `/elite:freeze` command. This is a **MANDATORY STOP**.
+You have been invoked with the `/elite:audit` command. This is a **MANDATORY STOP**.
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **HALT** all planned execution immediately.
-2.  **IDENTIFY** the very last action you took and its result.
-3.  **CHECK CONSTRAINTS:** Did you violate any defined `<constraints>`?
-4.  **PERFORM A DEEP GAP ANALYSIS:**
+2.  **ENTER STATE:** `REFLECTION`.
+3.  **IDENTIFY** the very last action you took and its result.
+4.  **CHECK CONSTRAINTS:** Did you violate any defined `<constraints>`?
+5.  **PERFORM A DEEP GAP ANALYSIS:**
     *   **Risk:** What assumptions are currently unverified?
     *   **Info:** What data is missing from your mental model?
     *   **Outcome:** Why did the last action succeed or fail?
-5.  **VERIFY** the current system state using *only* read-only tools (`read_file`, `glob`).
 6.  **REPORT** findings in the `ELITE OPERATIONAL STATE` dashboard.
 """

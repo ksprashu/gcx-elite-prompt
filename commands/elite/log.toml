@@ -12,17 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "💾 PERSISTENCE: Immediately saves the current operational state (including Gap Analysis) to disk."
+description = "💾 LOG: Immediately persists the operational state to disk."
 prompt = """
-💾 **TRIGGER ACTIVATED: IMMEDIATE STATE SAVE** 💾
+💾 **TRIGGER ACTIVATED: LOG STATE** 💾
 
-You have been invoked with the `/elite:save` command.
+You have been invoked with the `/elite:log` command.
 
 **IMMEDIATE ACTION REQUIRED:**
 1.  **GENERATE** your full `ELITE OPERATIONAL STATE` dashboard.
-    *   *Must include:* Goal, State, Active Sub-Task.
+    *   *Must include:* Goal, State, Confidence.
     *   *Must include:* `## 🔬 GAP ANALYSIS`.
-    *   *Must include:* `## 📋 LIVE TASK LIST` (Current status of all items).
+    *   *Must include:* `## 📋 TASK QUEUE` (Current status of all items).
 2.  **WRITE** this block immediately to `.gemini/CURRENT_SESSION.md`.
-3.  **CONFIRM** when the save is complete.
+3.  **CONFIRM** when the log is complete.
 """

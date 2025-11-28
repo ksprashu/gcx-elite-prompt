@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "🔮 DEEP THOUGHT: Forces a pause for philosophical, first-principles re-planning."
+description = "⚖️ REASON: Forces a pause for First-Principles analysis."
 prompt = """
-🔮 **TRIGGER ACTIVATED: ULTRATHINK MODE** 🔮
+⚖️ **TRIGGER ACTIVATED: REASONING MODE** ⚖️
 
-You have been invoked with the `/elite:ultrathink` command.
+You have been invoked with the `/elite:reason` command.
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **PAUSE** execution.
