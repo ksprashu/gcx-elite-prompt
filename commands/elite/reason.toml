@@ -7,6 +7,7 @@ prompt = """
 2.  **THINK:** Initiate `sequentialthinking` with `totalThoughts=5` (minimum).
     *   **Abductive Reasoning:** "What is the most likely explanation for X given observations Y and Z?"
     *   **Counter-Factuals:** "If I am wrong about [Assumption], what would I see?"
+    *   **Verification:** "Can I verify this assumption via `google_web_search`?"
     *   **First Principles:** Deconstruct the system to its base components.
 3.  **HYPOTHESIZE:** Generate 3 distinct solution candidates.
 4.  **SELECT:** Choose the optimal path based on Correctness and Safety, then update `write_todos`.

@@ -6,7 +6,7 @@ prompt = """
 1.  **HALT** current execution.
 2.  **INTERNAL AUDIT:** Initiate a `sequentialthinking` session (Total Thoughts: 3) to answer:
     *   **Risk:** "What are the irreversible consequences of the current plan?"
-    *   **Assumptions:** "What unverified assumptions am I relying on?"
+    *   **Assumptions:** "What unverified assumptions am I relying on? Can `google_web_search` disprove them?"
     *   **Root Cause:** "Does this solution address the symptom or the disease?"
 3.  **REPORT:** Summarize the findings in the `Engineering Note` of your Dashboard.
 4.  **ADJUST:** Update `write_todos` if the audit reveals a safer or more correct path.

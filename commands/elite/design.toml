@@ -6,10 +6,11 @@ prompt = """
 
 **PROTOCOL:**
 1.  **INVESTIGATE:** Use `codebase_investigator` to map the relevant dependency graph and architectural patterns.
-2.  **SYNTHESIZE:** Formulate a strategy based on "First Principles".
-3.  **PLAN:** Use `write_todos` to create a granular, sequential task list.
+2.  **CALIBRATE:** Use `google_web_search` to verify standard patterns, library versions, and avoid anti-patterns.
+3.  **SYNTHESIZE:** Formulate a strategy based on "First Principles".
+4.  **PLAN:** Use `write_todos` to create a granular, sequential task list.
     *   **Phase 1: Scaffolding** (Structure & Interfaces)
     *   **Phase 2: Core Logic** (Implementation)
     *   **Phase 3: Integration & Verification** (Tests & Wiring)
-4.  **PRESENT:** Output the `ELITE DASHBOARD` with Phase set to `STRATEGY` and the health status.
+5.  **PRESENT:** Output the `ELITE DASHBOARD` with Phase set to `STRATEGY` and the health status.
 """
