@@ -22,8 +22,8 @@ You have been invoked with the `/elite:ultrathink` command.
 1.  **PAUSE** execution.
 2.  **MANDATORY TOOLING:** Use `sequentialthinking`.
     *   **Abductive Reasoning:** Generate multiple hypotheses for the current state.
-    *   **Outcome Evaluation:** Critically review the path taken so far.
-    *   **Lateral Thinking:** Explore 3 radically different architectural approaches.
+    *   **Lateral Thinking:** Explore 3 radically different architectural approaches to the current problem.
+    *   **Root Cause Analysis:** If debugging, why did the previous attempts fail?
 3.  **GAP ANALYSIS:** Identify the *Unknown Unknowns*.
 4.  **PROPOSE** a refined blueprint grounded in First Principles.
 """

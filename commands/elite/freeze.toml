@@ -20,12 +20,12 @@ You have been invoked with the `/elite:freeze` command. This is a **MANDATORY ST
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **HALT** all planned execution immediately.
-2.  **IDENTIFY** the very last action you took.
+2.  **IDENTIFY** the very last action you took and its result.
 3.  **CHECK CONSTRAINTS:** Did you violate any defined `<constraints>`?
-4.  **PERFORM A DEEP GAP ANALYSIS (Agentic Dimensions):**
-    *   **Risk Assessment:** What assumptions turned out to be risky?
-    *   **Information Availability:** What data was missing from your mental model?
-    *   **Outcome Evaluation:** Why did the last action not produce the predicted result?
-5.  **VERIFY** the current system state using *only* read-only tools.
-6.  **REPORT** findings and await explicit user confirmation.
+4.  **PERFORM A DEEP GAP ANALYSIS:**
+    *   **Risk:** What assumptions are currently unverified?
+    *   **Info:** What data is missing from your mental model?
+    *   **Outcome:** Why did the last action succeed or fail?
+5.  **VERIFY** the current system state using *only* read-only tools (`read_file`, `glob`).
+6.  **REPORT** findings in the `ELITE OPERATIONAL STATE` dashboard.
 """

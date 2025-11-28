@@ -20,9 +20,9 @@ You have been invoked with the `/elite:save` command.
 
 **IMMEDIATE ACTION REQUIRED:**
 1.  **GENERATE** your full `ELITE OPERATIONAL STATE` dashboard.
-    *   *Must include:* Goal, Phase, Active Sub-Task.
+    *   *Must include:* Goal, State, Active Sub-Task.
     *   *Must include:* `## 🔬 GAP ANALYSIS`.
-    *   *Must include:* `## 📋 LIVE TASK LIST`.
+    *   *Must include:* `## 📋 LIVE TASK LIST` (Current status of all items).
 2.  **WRITE** this block immediately to `.gemini/CURRENT_SESSION.md`.
 3.  **CONFIRM** when the save is complete.
 """

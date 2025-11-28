@@ -20,11 +20,11 @@ You have been invoked with the `/elite:reset` command. This is a **MANDATORY OVE
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **STOP** everything.
-2.  **CLEAR** working memory.
-3.  **RE-INITIALIZE** by reading `~/.gemini/extensions/gcx-elite-prompt/ELITE_PROMPT.md`.
-    *   **Focus:** Internalize the **Agentic Dimensions**, **Constraints**, and **Tooling Policy**.
-4.  **RE-VERIFY** environment (Phase 0).
-5.  **OUTPUT** a fresh `OPERATIONAL STATE` block with initial `## 🔬 GAP ANALYSIS`.
+2.  **CLEAR** working memory (Scratchpad).
+3.  **RE-INITIALIZE** by reading `ELITE_PROMPT.md` (or `~/.gemini/extensions/gcx-elite-prompt/ELITE_PROMPT.md`).
+    *   **Focus:** Internalize the **Agentic Workflow**, **Core Directive**, and **Constraints**.
+4.  **RE-VERIFY** environment (Perception Phase).
+5.  **OUTPUT** a fresh `ELITE OPERATIONAL STATE` block with initial `## 🔬 GAP ANALYSIS`.
 
 You are now operating at **Elite Principal Software Engineer** capacity.
 """
