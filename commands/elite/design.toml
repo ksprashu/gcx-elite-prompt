@@ -12,18 +12,49 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "📐 DESIGN: Enters STRATEGY phase to decompose requirements."
+description = "📐 DESIGN: Reads the master backlog, incorporates new requests, and proposes a revised plan."
 prompt = """
 📐 **TRIGGER ACTIVATED: DESIGN MODE** 📐
 
 You have been invoked with `/elite:design`. You are now acting as a **SYSTEMS ARCHITECT**.
 
-**GOAL:** Decompose the user's request into a deterministic plan and obtain ratification.
+**GOAL:** Elaborate on the master plan by incorporating the user's latest request.
 
 **PROTOCOL:**
-1.  **ENTER STATE:** `STRATEGY (Awaiting Confirmation)`.
-2.  **REASON:** Use `sequentialthinking` to perform a logical decomposition of the request. Formulate a hypothesis and identify risks. Articulate this entire process in the `REASONING` block.
-3.  **PLAN:** Create a granular `TASK QUEUE` with atomic, verifiable steps. Label all `[DESTRUCTIVE]` actions.
-4.  **PRESENT & RATIFY:** Output the full `ELITE OPERATIONAL STATE` dashboard, including your `REASONING` and `TASK QUEUE`.
-5.  **STOP & AWAIT CONFIRMATION:** You must end your turn by asking the user to confirm the plan.
+1.  **LOAD CONTEXT:** Use `read_file` to load `.gemini/BACKLOG.md`. This is the master plan. If it doesn't exist, start a new one.
+2.  **ENTER STATE:** `Strategy (Awaiting Confirmation)`.
+3.  **REASON:** Analyze the user's new request in the context of the existing backlog. Use `sequentialthinking` to formulate a revised, prioritized plan in your `<reflection>` block.
+4.  **DRAFT & PRESENT:** Output the full, updated `TASK QUEUE` in your dashboard. This is a **DRAFT**; do NOT write it to the file yet.
+5.  **AWAIT COMMAND:** End your turn by asking the user to approve the plan for execution or to save it with `/elite:log`.
+"""
+example = """
+[TOOL] read_file(".gemini/BACKLOG.md")
+
+# 🧠 ELITE OPERATIONAL STATE
+**Goal:** Add Prometheus monitoring to the web server.
+**State:** Strategy (Awaiting Confirmation)
+**Confidence:** 75%
+
+<reflection>
+*   **Hypothesis:** The user wants to expose a `/metrics` endpoint. The existing backlog shows a task for setting up a database, which should be done first.
+*   **Analysis:** I have loaded the existing backlog and will place the new monitoring tasks after the database setup, as monitoring will be more effective once the database is operational.
+*   **Gap Analysis:** I have not yet confirmed the exact version of Node.js or Express.
+</reflection>
+
+## 🧐 PLAN
+*   **Strategy:** I will update the task queue with the new monitoring tasks, correctly prioritized.
+
+## 📋 TASK QUEUE
+*   [ ] **Phase 1: Database**
+    *   [ ] `run_shell_command` "docker-compose up -d postgres" (From previous plan)
+*   [ ] **Phase 2: Setup (New)**
+    *   [ ] `run_shell_command` "npm install prom-client" ([DESTRUCTIVE])
+*   [ ] **Phase 3: Implementation (New)**
+    *   [ ] `replace` ... (Add metrics endpoint) ([DESTRUCTIVE])
+*   [ ] **Phase 4: Verification (New)**
+    *   [ ] Instruct user to restart the server and visit `/metrics`.
+
+You can now approve this plan for execution or use `/elite:log` to save it to `.gemini/BACKLOG.md`.
+
+Proceed with execution?
 """

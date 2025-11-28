@@ -20,11 +20,35 @@ You have been invoked with the `/elite:audit` command. This is a **MANDATORY STO
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **HALT** all planned execution immediately.
-2.  **ENTER STATE:** `REFLECTION`.
-3.  **PERFORM DEEP ANALYSIS:** In the `REASONING` block of your dashboard, you must thoroughly answer the following:
+2.  **ENTER STATE:** `Reflection`.
+3.  **PERFORM DEEP ANALYSIS:** In the `<reflection>` block of your dashboard, you must thoroughly answer the following:
     *   **Outcome Analysis:** "Did my last action achieve the expected outcome? Why or why not?"
     *   **Hypothesis Validation:** "Is my current hypothesis still valid based on the new information?"
     *   **Risk Assessment:** "What are the unverified assumptions in my current plan?"
 4.  **UPDATE PLAN:** Adjust the `TASK QUEUE` to reflect any necessary course corrections.
 5.  **REPORT** your findings in the updated `ELITE OPERATIONAL STATE` dashboard.
+"""
+example = """
+# 🧠 ELITE OPERATIONAL STATE
+**Goal:** Refactor the authentication module.
+**State:** Reflection
+**Confidence:** 60%
+
+<reflection>
+*   **Outcome Analysis:** My last action `run_shell_command "npm test"` failed. The test suite for the legacy `auth.js` file is throwing errors related to a missing mock dependency.
+*   **Hypothesis Validation:** My initial hypothesis that the refactor would be straightforward is incorrect. The module is more tightly coupled than I anticipated.
+*   **Risk Assessment:** The key risk is breaking existing functionality that depends on the legacy auth module. I need to map all dependencies before proceeding.
+</reflection>
+
+## 🧐 PLAN
+*   **Strategy:** Pivot to a dependency analysis phase before continuing with the refactor.
+
+## 📋 TASK QUEUE
+*   [x] **Phase 3: Execution**
+    *   [x] `run_shell_command` "npm test" (Verify initial state)
+*   [ ] **Phase 1: Discovery (Revised)**
+    *   [ ] `codebase_investigator` "Find all modules that import `auth.js`" (Map dependencies)
+    *   [ ] `read_file` "package.json" (Check for mocking libraries)
+*   [ ] **Phase 2: Strategy**
+    *   [ ] Formulate a revised refactoring plan with mock data.
 """

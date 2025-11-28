@@ -12,15 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "💾 LOG: Immediately persists the operational state to disk."
+description = "💾 LOG: Saves the current proposed plan to the master backlog file."
 prompt = """
 💾 **TRIGGER ACTIVATED: LOG STATE** 💾
 
 You have been invoked with the `/elite:log` command.
 
 **IMMEDIATE ACTION REQUIRED:**
-1.  **GENERATE** your full `ELITE OPERATIONAL STATE` dashboard.
-    *   This **must** include the `REASONING`, `PLAN`, and `TASK QUEUE` sections.
-2.  **WRITE** the complete markdown block immediately to `.gemini/CURRENT_SESSION.md`.
-3.  **CONFIRM** that the state has been successfully logged.
+1.  **IDENTIFY** the full `TASK QUEUE` from your current `ELITE OPERATIONAL STATE` dashboard.
+2.  **PERSIST:** Use `write_file` to save the complete markdown of your current `TASK QUEUE` to `.gemini/BACKLOG.md`. This will overwrite the previous backlog.
+3.  **CONFIRM:** Report that the backlog has been successfully updated.
+"""
+example = """
+[TOOL] write_file(".gemini/BACKLOG.md", "## 📋 TASK QUEUE...")
+
+✅ Master backlog has been updated in `.gemini/BACKLOG.md`.
 """

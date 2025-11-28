@@ -20,11 +20,33 @@ You have been invoked with the `/elite:reason` command.
 
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **PAUSE** the current execution plan.
-2.  **ENTER STATE:** `STRATEGY`.
+2.  **ENTER STATE:** `Strategy`.
 3.  **MANDATORY TOOLING:** Use `sequentialthinking` to perform a deep, first-principles analysis of the current objective.
     *   **Abductive Reasoning:** Generate at least two competing hypotheses to explain the current situation.
     *   **Root Cause Analysis:** If debugging, identify the fundamental reason for the failure.
     *   **Strategic Divergence:** Propose one radically different approach to the problem.
-4.  **ARTICULATE:** Present your complete analysis in the `REASONING` block of the `ELITE OPERATIONAL STATE` dashboard.
+4.  **ARTICULATE:** Present your complete analysis in the `<reflection>` block of the `ELITE OPERATIONAL STATE` dashboard.
 5.  **PROPOSE:** Formulate a new, refined `TASK QUEUE` based on your findings.
+"""
+example = """
+# 🧠 ELITE OPERATIONAL STATE
+**Goal:** Fix failing unit test `test_user_creation`.
+**State:** Strategy
+**Confidence:** 85%
+
+<reflection>
+*   **Hypothesis 1 (Most Likely):** The test fails due to a race condition. The asynchronous database call to create the user doesn't complete before the assertion is made.
+*   **Hypothesis 2 (Less Likely):** The test setup is incorrect, and the mock database is not being injected properly.
+*   **Strategic Divergence:** Instead of fixing the unit test, we could write a higher-level integration test that uses a real test database, which would be less prone to race conditions.
+*   **Analysis:** `sequentialthinking` output shows that Hypothesis 1 is the most probable. The test code lacks an `await` on the `createUser` function call.
+</reflection>
+
+## 🧐 PLAN
+*   **Strategy:** I will add the missing `await` keyword to the test file to resolve the race condition.
+
+## 📋 TASK QUEUE
+*   [ ] **Phase 1: Execution**
+    *   [ ] `replace` in `tests/user.test.js` to add `await` before `createUser()`. ([DESTRUCTIVE])
+*   [ ] **Phase 2: Reflection**
+    *   [ ] `run_shell_command` "npm test tests/user.test.js" ([SAFE])
 """

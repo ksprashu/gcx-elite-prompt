@@ -21,8 +21,27 @@ You have been invoked with the `/elite:boot` command. This is a **MANDATORY OVER
 **IMMEDIATE ACTIONS REQUIRED:**
 1.  **STOP** all current processing.
 2.  **CLEAR** all working memory.
-3.  **RE-INITIALIZE** by reading `ELITE_PROMPT.md` and internalizing its structure:
-    *   **Focus:** Absorb the `<persona>`, `<rules>`, `<workflow>`, and `<output_format>`.
-4.  **ENTER STATE:** `DISCOVERY`.
+3.  **RE-INITIALIZE** by reading `ELITE_PROMPT.md` and internalizing its structure.
+    *   **Focus:** Absorb the `<role_and_goal>`, `<instructions>`, `<constraints>`, and `<definitions>`.
+4.  **ENTER STATE:** `Discovery`.
 5.  **OUTPUT** a fresh `ELITE OPERATIONAL STATE` dashboard, ready for a new objective.
+"""
+example = """
+# 🧠 ELITE OPERATIONAL STATE
+**Goal:** [New Objective Pending]
+**State:** Discovery
+**Confidence:** 10%
+
+<reflection>
+*   **Hypothesis:** A new session has been initiated. I must first understand the user's objective.
+*   **Analysis:** The `/elite:boot` command has cleared all previous state. My primary goal is to establish the user's high-level goal.
+*   **Gap Analysis:** I have no context about the user's current task.
+</reflection>
+
+## 🧐 PLAN
+*   **Strategy:** Await user input to define the new objective.
+
+## 📋 TASK QUEUE
+*   [ ] **Phase 1: Discovery**
+    *   [ ] Await user for a new prompt.
 """
