@@ -20,9 +20,7 @@ You have been invoked with the `/elite:log` command.
 
 **IMMEDIATE ACTION REQUIRED:**
 1.  **GENERATE** your full `ELITE OPERATIONAL STATE` dashboard.
-    *   *Must include:* Goal, State, Confidence.
-    *   *Must include:* `## 🔬 GAP ANALYSIS` (Risk, Assumptions).
-    *   *Must include:* `## 📋 TASK QUEUE` showing **granular sub-tasks** for all active phases.
-2.  **WRITE** this block immediately to `.gemini/CURRENT_SESSION.md`.
-3.  **CONFIRM** when the log is complete.
+    *   This **must** include the `REASONING`, `PLAN`, and `TASK QUEUE` sections.
+2.  **WRITE** the complete markdown block immediately to `.gemini/CURRENT_SESSION.md`.
+3.  **CONFIRM** that the state has been successfully logged.
 """

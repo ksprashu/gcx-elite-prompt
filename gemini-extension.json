@@ -5,11 +5,11 @@
   "author": "ksprashanth",
   "license": "MIT",
   "commands": {
-    "elite:reset": "commands/elite/reset.toml",
-    "elite:freeze": "commands/elite/freeze.toml",
-    "elite:ultrathink": "commands/elite/ultrathink.toml",
-    "elite:plan": "commands/elite/plan.toml",
-    "elite:save": "commands/elite/save.toml"
+    "elite:audit": "commands/elite/audit.toml",
+    "elite:boot": "commands/elite/boot.toml",
+    "elite:design": "commands/elite/design.toml",
+    "elite:log": "commands/elite/log.toml",
+    "elite:reason": "commands/elite/reason.toml"
   },
   "contextFileName": "ELITE_PROMPT.md"
 }

@@ -23,11 +23,11 @@ This agent is NOT designed for casual chat. It is designed for complex, multi-st
 
 These slash commands act as "interrupts" to force specific cognitive states:
 
-*   **`/elite:design` (📐 Design Mode):** Enters the **STRATEGY** phase. Use this to turn vague requirements into a rigorous logical decomposition and task queue.
-*   **`/elite:reason` (⚖️ Reasoning Mode):** Pauses execution to use first-principles thinking. Use when the current approach is failing or requires architectural innovation.
 *   **`/elite:audit` (🧊 Audit Mode):** Forces an immediate stop and entry to the **REFLECTION** phase. Use this to verify quality or investigate potential errors.
 *   **`/elite:boot` (🔄 System Reboot):** Forces a complete re-read of the system prompt and clears working memory. Use this to restart the agent's persona.
+*   **`/elite:design` (📐 Design Mode):** Enters the **STRATEGY** phase. Use this to turn vague requirements into a rigorous logical decomposition and task queue.
 *   **`/elite:log` (💾 Log State):** Immediately writes the current operational dashboard to `.gemini/CURRENT_SESSION.md`.
+*   **`/elite:reason` (⚖️ Reasoning Mode):** Pauses execution to use first-principles thinking. Use when the current approach is failing or requires architectural innovation.
 
 ## Installation
 
