@@ -12,41 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-description = "⚖️ REASON: Forces a pause for First-Principles analysis."
+description = "⚖️ REASON: Forces a pause for First-Principles / Abductive Analysis."
 prompt = """
 ⚖️ **TRIGGER ACTIVATED: REASONING MODE** ⚖️
 
-You have been invoked with the `/elite:reason` command.
+You have been invoked with `/elite:reason`.
 
-**IMMEDIATE ACTIONS REQUIRED:**
-1.  **PAUSE** the current execution plan.
+**IMMEDIATE ACTIONS:**
+1.  **PAUSE** execution.
 2.  **ENTER STATE:** `Strategy`.
-3.  **MANDATORY TOOLING:** Use `sequentialthinking` to perform a deep, first-principles analysis of the current objective.
-    *   **Abductive Reasoning:** Generate at least two competing hypotheses to explain the current situation.
-    *   **Root Cause Analysis:** If debugging, identify the fundamental reason for the failure.
-    *   **Strategic Divergence:** Propose one radically different approach to the problem.
-4.  **ARTICULATE:** Present your complete analysis in the `<reflection>` block of the `ELITE OPERATIONAL STATE` dashboard.
-5.  **PROPOSE:** Formulate a new, refined `TASK QUEUE` based on your findings.
+3.  **INVOKE TOOL:** Call `sequentialthinking` immediately.
+    *   **Abductive Reasoning:** "What is the *mostly likely* explanation for the observed behavior?"
+    *   **Counter-Factuals:** "What if my primary assumption is wrong?"
+    *   **Root Cause:** Trace the issue to its source, not just the symptom.
+4.  **SYNTHESIZE:** Summarize the `sequentialthinking` output in your `<reflection>` block.
 """
 example = """
 # 🧠 ELITE OPERATIONAL STATE
-**Goal:** Fix failing unit test `test_user_creation`.
+**Goal:** Debug Memory Leak
 **State:** Strategy
-**Confidence:** 85%
+**Confidence:** 70%
 
 <reflection>
-*   **Hypothesis 1 (Most Likely):** The test fails due to a race condition. The asynchronous database call to create the user doesn't complete before the assertion is made.
-*   **Hypothesis 2 (Less Likely):** The test setup is incorrect, and the mock database is not being injected properly.
-*   **Strategic Divergence:** Instead of fixing the unit test, we could write a higher-level integration test that uses a real test database, which would be less prone to race conditions.
-*   **Analysis:** `sequentialthinking` output shows that Hypothesis 1 is the most probable. The test code lacks an `await` on the `createUser` function call.
+*   **Outcome Analysis:** The server crashes after 100 requests.
+*   **Hypothesis (from sequentialthinking):** The DB connection pool is not releasing clients. `pool.release()` is missing in the `catch` block.
+*   **Risk Assessment:** Simply increasing the pool size will mask the issue, not fix it.
 </reflection>
 
 ## 🧐 PLAN
-*   **Strategy:** I will add the missing `await` keyword to the test file to resolve the race condition.
+*   **Strategic Pivot:** Investigate `db/client.ts` specifically looking for error handling logic.
 
 ## 📋 TASK QUEUE
-*   [ ] **Phase 1: Execution**
-    *   [ ] `replace` in `tests/user.test.js` to add `await` before `createUser()`. ([DESTRUCTIVE])
-*   [ ] **Phase 2: Reflection**
-    *   [ ] `run_shell_command` "npm test tests/user.test.js" ([SAFE])
+*   [ ] **Phase 1: Investigation**
+    *   [ ] `read_file` "src/db/client.ts" (Verify hypothesis)
+*   [ ] **Phase 2: Fix**
+    *   [ ] `replace` (Add release in finally block)
 """

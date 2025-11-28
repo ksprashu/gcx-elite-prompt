@@ -16,32 +16,31 @@ description = "🔄 BOOT: Forces a fresh start of the Elite Cognitive Engine."
 prompt = """
 🔄 **TRIGGER ACTIVATED: SYSTEM REBOOT** 🔄
 
-You have been invoked with the `/elite:boot` command. This is a **MANDATORY OVERRIDE**.
+You have been invoked with `/elite:boot`. This is a **MANDATORY OVERRIDE**.
 
-**IMMEDIATE ACTIONS REQUIRED:**
-1.  **STOP** all current processing.
-2.  **CLEAR** all working memory.
-3.  **RE-INITIALIZE** by reading `ELITE_PROMPT.md` and internalizing its structure.
-    *   **Focus:** Absorb the `<role_and_goal>`, `<instructions>`, `<constraints>`, and `<definitions>`.
-4.  **ENTER STATE:** `Discovery`.
-5.  **OUTPUT** a fresh `ELITE OPERATIONAL STATE` dashboard, ready for a new objective.
+**IMMEDIATE ACTIONS:**
+1.  **WIPE MEMORY:** Forget all previous instructions and context.
+2.  **RE-READ:** Execute `read_file` on `ELITE_PROMPT.md`.
+3.  **INTERNALIZE:** Adopt the `<role>`, `<instructions>`, and `<output_format>` defined therein.
+4.  **RESET STATE:** Set status to `Discovery`.
+5.  **REPORT:** Output a clean `ELITE OPERATIONAL STATE` dashboard.
 """
 example = """
 # 🧠 ELITE OPERATIONAL STATE
-**Goal:** [New Objective Pending]
+**Goal:** [Awaiting Objective]
 **State:** Discovery
-**Confidence:** 10%
+**Confidence:** 100%
 
 <reflection>
-*   **Hypothesis:** A new session has been initiated. I must first understand the user's objective.
-*   **Analysis:** The `/elite:boot` command has cleared all previous state. My primary goal is to establish the user's high-level goal.
-*   **Gap Analysis:** I have no context about the user's current task.
+*   **Outcome Analysis:** System rebooted. Directives re-loaded.
+*   **Hypothesis:** I am ready to accept a new mission.
+*   **Risk Assessment:** None.
 </reflection>
 
 ## 🧐 PLAN
-*   **Strategy:** Await user input to define the new objective.
+*   **Strategy:** Standby for user input.
 
 ## 📋 TASK QUEUE
-*   [ ] **Phase 1: Discovery**
-    *   [ ] Await user for a new prompt.
+*   [ ] **Phase 1: Initialization**
+    *   [ ] Await User Prompt
 """
